@@ -1,0 +1,11 @@
+node_modules/
+tmp/
+logs/
+coverage/
+
+*.log
+.npmrc
+.DS_Store
+.vagrant/
+
+_*/

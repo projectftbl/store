@@ -1,0 +1,8 @@
+{
+  "RETHINKDB": {
+    "DATABASE": "test"
+  }
+, "LOGGING": {
+    "LEVEL": "NONE"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "RETHINKDB": {
+    "HOST": "localhost"
+  , "PORT": 28015
+  , "DATABASE": "test"
+  }
+, "LOGGING": {
+    "LEVEL": "NONE"
+  }
+}

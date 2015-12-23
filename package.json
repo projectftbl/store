@@ -1,0 +1,39 @@
+{
+  "name": "@ftbl/store",
+  "version": "0.0.0",
+  "description": "Data access",
+  "main": "node index",
+  "scripts": {
+    "test": "node ./node_modules/gulp/bin/gulp test"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.x"
+  },
+  "author": "Johnny Hall",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:projectftbl/store.git"
+  },
+  "dependencies": {
+    "@ftbl/configuration": "^1.0.1",
+    "@ftbl/errors": "^1.0.1",
+    "@ftbl/log": "^1.0.1",
+    "bluebird": "^2.9.34",
+    "chalk": "^1.1.0",
+    "is-my-json-valid": "^2.12.1",
+    "lodash": "^3.10.0",
+    "rethinkdbdash": "^2.0.18"
+  },
+  "devDependencies": {
+    "@ftbl/gulp": "^1.0.0",
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "mocha": "^2.3.4",
+    "sandboxed-module": "^2.0.3",
+    "sinon": "^1.17.2",
+    "sinon-as-promised": "^4.0.0",
+    "sinon-chai": "^2.8.0"
+  }
+}
