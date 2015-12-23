@@ -1,6 +1,7 @@
 {
   "RETHINKDB": {
-    "DATABASE": "test"
+    "URL": "rethinkdb://localhost:28105"
+  , "DATABASE": "test"
   }
 , "LOGGING": {
     "LEVEL": "NONE"
