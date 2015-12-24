@@ -1,5 +1,6 @@
 var _ = require('lodash')
-  , User = require('../fixtures/users/repositories/user');
+  , User = require('../fixtures/users/repositories/user')
+  , setupDatabase = require('../../lib/setupDatabase');
 
 var USER = { 
   name: 'John Doe'
@@ -13,11 +14,13 @@ describe('Repository', function() {
   var suite = this;
 
   before(function(done) {
-    User.define().then(function() {
-      User.truncate().then(function() {
-        done();
+    setupDatabase().then(function() {
+      User.define().then(function() {
+        User.truncate().then(function() {
+          done();
+        });
       });
-    });     
+    });
   });
     
   describe('create', function() {

@@ -1,9 +1,11 @@
 var database = 'test'
   , run = sinon.stub()
+  , dbList = sinon.stub().resolves([])
   , dbCreate = sinon.stub().returns({ run: run })
   , Store = function() {
       this.database = {
-        dbCreate: dbCreate
+        dbList: dbList
+      , dbCreate: dbCreate
       };
     };
 
@@ -16,6 +18,10 @@ describe('setupDatabase', function() {
 
   beforeEach(function() {
     sut();
+  });
+
+  it('should list the databases', function() {
+    dbList.should.be.called;
   });
 
   it('should create the correct database', function() {

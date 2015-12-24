@@ -1,12 +1,10 @@
 var gulp = require('gulp');
 
 require('@ftbl/gulp')(gulp, {
-  'test:unit': {
+  test: {
   	setup: require('./test/unit/setup')
+  , timeout: 5000
   }
-, 'test:integration': {
-  	setup: require('./test/integration/setup')
-  }
-});
+}); 
 
 gulp.task('default', [ 'test' ]);
