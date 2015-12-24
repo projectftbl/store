@@ -1,6 +1,6 @@
 var Store = require('../../lib/store');
 
-describe.only('Store', function() {
+describe('Store', function() {
   var suite = this;
   
   before(function() {
@@ -14,7 +14,7 @@ describe.only('Store', function() {
     }, done);
   });
 
-  it('should expose config', function(done) {
+  it('should expose config', function() {
     suite.sut.config.host.should.exist;
     suite.sut.config.port.should.exist;
     suite.sut.config.database.should.exist;

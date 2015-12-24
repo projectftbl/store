@@ -2,16 +2,14 @@ var chai = require('chai')
   , Promise = require('bluebird')
   , sinon = require('sinon')
   , sinonChai = require('sinon-chai')
-  , sandbox = require('sandboxed-module');
+  , proxyquire = require('proxyquire');
 
 require('sinon-as-promised')(Promise);
 
-function noOp() {
-	// No op
-}
+function noOp() { /* No op */ }
 
 global.should = chai.should();
-global.sandbox = sandbox;
+global.proxyquire = proxyquire;
 global.sinon = sinon;
 global.noOp = noOp;
 

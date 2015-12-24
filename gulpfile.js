@@ -2,10 +2,10 @@ var gulp = require('gulp');
 
 require('@ftbl/gulp')(gulp, {
   'test:unit': {
-  	setup: require('./test/setup')
+  	setup: require('./test/unit/setup')
   }
 , 'test:integration': {
-  	setup: require('./test/setup')
+  	setup: require('./test/integration/setup')
   }
 });
 
