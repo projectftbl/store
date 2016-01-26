@@ -16,7 +16,7 @@ describe('configuration', function() {
     });
       
     it('should set correct database', function() {
-      this.configuration.database.should.equal('test');
+      this.configuration.db.should.equal('test');
     });
   });
     
@@ -34,7 +34,7 @@ describe('configuration', function() {
     });
      
     it('should set correct database', function() {
-      this.configuration.database.should.equal('test');
+      this.configuration.db.should.equal('test');
     });
   });
     

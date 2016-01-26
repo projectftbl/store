@@ -17,6 +17,6 @@ describe('Store', function() {
   it('should expose config', function() {
     suite.sut.config.host.should.exist;
     suite.sut.config.port.should.exist;
-    suite.sut.config.database.should.exist;
+    should.not.exist(suite.sut.config.db);
   });
 });
