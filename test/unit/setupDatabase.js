@@ -1,7 +1,6 @@
 var database = 'test'
-  , run = sinon.stub()
-  , dbList = sinon.stub().resolves([])
-  , dbCreate = sinon.stub().returns({ run: run })
+    dbList = sinon.stub().resolves()
+  , dbCreate = sinon.stub().resolves()
   , Store = function() {
       this.database = {
         dbList: dbList
@@ -26,10 +25,6 @@ describe('setupDatabase', function() {
 
   it('should create the correct database', function() {
     dbCreate.should.be.calledWith(database);
-  });
-
-  it('should run the query', function() {
-    run.should.be.called;
   });
 
 });
