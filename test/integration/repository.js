@@ -75,6 +75,18 @@ describe('Repository', function() {
       });     
     });
 
+    describe('count', function() {
+      before(function(done) {
+        User.count().then(function(count) {
+          suite.count = count;
+        }).then(done);
+      });   
+        
+      it('should return count of 1', function() {
+        suite.count.should.equal(1);
+      });     
+    });
+
     describe('get', function() {
       before(function(done) {
         User.get(suite.user.id).then(function(user) {
