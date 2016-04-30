@@ -16,4 +16,8 @@ describe('paging', function() {
   it('should allow specifying a different page and limit', function() {
     sut(3, 50).should.deep.equal({ skip: 100, limit: 50 });
   });
+
+  it('should allow specifying skip directly', function() {
+    sut(3, 50, 50).should.deep.equal({ skip: 50, limit: 50 });
+  });
 });
