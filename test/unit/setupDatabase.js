@@ -1,5 +1,6 @@
 var database = 'test'
-  , run = sinon.stub()
+  , catc = sinon.stub()
+  , run = sinon.stub().returns({ catch: catc })
   , dbList = sinon.stub().resolves()
   , dbCreate = sinon.stub().returns({ run: run })
   , Store = function() {
