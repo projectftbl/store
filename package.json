@@ -24,7 +24,7 @@
     "chalk": "^1.1.0",
     "is-my-json-valid": "^2.12.1",
     "lodash": "^3.10.0",
-    "rethinkdbdash": "2.2.20"
+    "rethinkdbdash": "^2.2.20"
   },
   "devDependencies": {
     "@ftbl/gulp": "^1.0.0",
