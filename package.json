@@ -1,6 +1,6 @@
 {
   "name": "@ftbl/store",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "Data access",
   "main": "node index",
   "scripts": {
