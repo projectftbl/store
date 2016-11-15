@@ -1,5 +1,5 @@
 {
-  "name": "@ftbl/store",
+  "name": "@recipher/store",
   "version": "1.2.17",
   "description": "Data access",
   "main": "node index",
@@ -14,12 +14,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:projectftbl/store.git"
+    "url": "git@github.com:recipher/store.git"
   },
   "dependencies": {
-    "@ftbl/configuration": "^1.0.1",
-    "@ftbl/errors": "^1.0.1",
-    "@ftbl/log": "^1.0.1",
+    "@recipher/configuration": "^1.0.1",
+    "@recipher/errors": "^1.0.1",
+    "@recipher/log": "^1.0.1",
     "bluebird": "^2.9.34",
     "chalk": "^1.1.0",
     "is-my-json-valid": "^2.12.1",
@@ -27,7 +27,7 @@
     "rethinkdbdash": "2.2.20"
   },
   "devDependencies": {
-    "@ftbl/gulp": "^1.0.0",
+    "@recipher/gulp": "^1.0.0",
     "chai": "^3.4.1",
     "gulp": "^3.9.0",
     "mocha": "^2.3.4",
